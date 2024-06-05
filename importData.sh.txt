@@ -1,0 +1,16 @@
+//tworzymy kontener
+docker run -d -p 27017:27017 --name ecommerce mongo:latest
+
+docker start ecommerce
+
+docker exec -it ecommerce bash
+
+//przesylam pliki do kontenera za pomocą zakladki files
+
+//import do bazy
+
+mongoimport --db baza --collection Orders --file Orders.json --jsonArray
+
+mongoimport --db baza --collection Products --file Products.json --jsonArray
+
+mongoimport --db baza --collection Customers --file Customers.json --jsonArray

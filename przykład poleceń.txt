@@ -1,0 +1,4 @@
+curl http://localhost:3000/
+curl http://localhost:3000/api/products/5280a713-f202-44a0-a758-35de6896fd31
+curl -X POST http://localhost:3000/api/orders -H "Content-Type: application/json" -d "{\"order_id\":\"874442eb-cbea-4542-b358-9cc10cdede78\",\"customer_id\":\"dce13bb5-dcd8-4c63-80d3-a39875603252\",\"product_id\":\"f46311b2-7712-44f1-b947-a9fefbab5616\",\"quantity\":2,\"order_date\":\"3/19/2024\",\"status\":\"Cancelled\"}"
+curl -X PUT http://localhost:3000/api/products/5280a713-f202-44a0-a758-35de6896fd31 -H "Content-Type: application/json" -d "{\"product_name\":\"Updated Product Name\",\"category\":\"Updated Category\",\"price\":99.99,\"in_stock\":false}"

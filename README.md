@@ -1,0 +1,1 @@
+# AplikacjeBazodanowe_kolokwium
